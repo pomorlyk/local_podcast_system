@@ -1,0 +1,25 @@
+# 核心应用不需要任何第三方依赖 —— 只用 Python 标准库。
+#
+#   python run.py
+#
+# 所以这个文件是空的，保留它只是为了说明：
+# 「听间」的浏览、更新目录、下载、播放、字幕导入导出、
+# 生词本、订阅自动更新、AI 发现，全部只用标准库。
+#
+# 只有下面两类可选能力需要额外安装：
+#
+# 1) 本地语音转写（Whisper，需要 NVIDIA GPU + cuDNN）
+#       python -m venv .venv-asr
+#       .venv-asr\Scripts\pip install -r requirements-asr.txt      # Windows
+#       .venv-asr/bin/pip     install -r requirements-asr.txt      # macOS / Linux
+#       powershell -File tools/download_podcast_model.ps1          # 下载并校验模型
+#    然后指向它：
+#       set PODCAST_ASR_PYTHON=.venv-asr\Scripts\python.exe
+#       set PODCAST_ASR_MODEL=models\whisper-large-v3-turbo
+#
+# 2) 中文字幕翻译 / AI 挑选播客（DeepSeek 或任意 OpenAI 兼容接口）
+#    不需要 pip 安装，但需要你自己的 API 密钥。
+#    密钥在界面里填，或放在环境变量里，永远不要写进仓库：
+#       set PODCAST_LLM_API_KEY=你的密钥
+#       set PODCAST_LLM_BASE_URL=https://api.deepseek.com     （可选）
+#       set PODCAST_LLM_MODEL=deepseek-chat                   （可选）

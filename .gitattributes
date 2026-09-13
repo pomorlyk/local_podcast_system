@@ -1,0 +1,25 @@
+# 统一文本文件的换行符，避免 Windows / macOS 之间来回出现「整个文件都变了」的假差异。
+# 仓库内存放 LF；二进制文件不做任何处理。
+* text=auto eol=lf
+
+*.py     text eol=lf
+*.js     text eol=lf
+*.css    text eol=lf
+*.html   text eol=lf
+*.json   text eol=lf
+*.md     text eol=lf
+*.sh     text eol=lf
+*.ps1    text eol=lf
+*.txt    text eol=lf
+*.sql    text eol=lf
+
+*.jpg    binary
+*.jpeg   binary
+*.png    binary
+*.mp3    binary
+*.m4a    binary
+*.xml    binary
+
+# 节目目录是抓取结果，不参与 diff 统计
+data/library/*/catalog.json  linguist-generated=true
+data/library/*/source_audit.json  linguist-generated=true

@@ -1,0 +1,42 @@
+# 听间 · 本地播客书架 —— 忽略规则
+#
+# 这个仓库只放代码和可以重新生成的节目目录元数据。
+# 你的音频、字幕、笔记、学习记录和 API 密钥都不会被提交。
+
+# ---- 个人运行数据 ----------------------------------------------------------
+data/ui.sqlite3
+data/ui.sqlite3-*
+data/cache/
+data/archive/
+data/library/*/episodes/
+data/library/*/feed_snapshots/
+
+# ---- 本机配置与密钥 --------------------------------------------------------
+data/index/translation-settings.json
+data/index/discovery-settings.json
+data/index/interests.json
+data/index/feed-state.json
+*.part
+
+# ---- 可选的大型本地组件（转写模型 / 独立环境） ------------------------------
+models/
+.venv-asr/
+*.bin
+
+# ---- Python ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# ---- 编辑器与系统 ----------------------------------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- 发布产物 --------------------------------------------------------------
+release/
+*.zip
