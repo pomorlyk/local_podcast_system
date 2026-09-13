@@ -1,0 +1,39 @@
+{
+  "checked_at": "2026-09-06T09:26:12.291198+00:00",
+  "http": {
+    "status": 200,
+    "final_url": "https://cdn.atp.fm/rss/public?wtvryzdm",
+    "content_type": "text/xml; charset=utf-8"
+  },
+  "feed_sha256": "38f6aec572d3b492d02498ffae8df01c1161e83bf0db85ca8c8ac56bc30b29db",
+  "title": "Accidental Tech Podcast",
+  "current_feed_entries": 708,
+  "retained_catalog_entries": 708,
+  "entries_with_audio": 708,
+  "entries_with_transcript_links": 0,
+  "entries_with_chapter_links": 0,
+  "latest": [
+    {
+      "episode_id": "1828aef9ec7c44002497",
+      "title": "707: Haunting the Campus Like a Ghost",
+      "published_at": "Thu, 03 Sep 2026 15:43:50 +0000",
+      "declared_duration": "02:05:47",
+      "episode_number": "707"
+    },
+    {
+      "episode_id": "009b0b4efb9f144e1be1",
+      "title": "706: No One Is Getting a Good Deal Tonight",
+      "published_at": "Thu, 27 Aug 2026 19:13:42 +0000",
+      "declared_duration": "02:37:41",
+      "episode_number": "706"
+    },
+    {
+      "episode_id": "a4533df8ac438d144379",
+      "title": "705: Relentless in a Gentle Way",
+      "published_at": "Thu, 20 Aug 2026 20:45:50 +0000",
+      "declared_duration": "02:30:22",
+      "episode_number": "705"
+    }
+  ],
+  "scope": "Only current RSS contents were inspected; absence is not proof that no transcript exists elsewhere."
+}

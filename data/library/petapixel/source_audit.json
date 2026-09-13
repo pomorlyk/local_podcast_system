@@ -1,0 +1,39 @@
+{
+  "checked_at": "2026-09-06T07:13:23.317600+00:00",
+  "http": {
+    "status": 200,
+    "final_url": "https://anchor.fm/s/e3085708/podcast/rss",
+    "content_type": "application/rss+xml; charset=utf-8"
+  },
+  "feed_sha256": "56b36b43909fc87c04ea9bc295cb4ed83fadc91d34f7e9109acca8d390886452",
+  "title": "The PetaPixel Photography Podcast",
+  "current_feed_entries": 146,
+  "retained_catalog_entries": 146,
+  "entries_with_audio": 146,
+  "entries_with_transcript_links": 0,
+  "entries_with_chapter_links": 0,
+  "latest": [
+    {
+      "episode_id": "67d8d21b0a2ffcccbc9f",
+      "title": "The Most Influential Camera Brand of Every Decade",
+      "published_at": "Wed, 02 Sep 2026 16:19:47 GMT",
+      "declared_duration": "01:40:56",
+      "episode_number": "143"
+    },
+    {
+      "episode_id": "513d384e30767cbdb066",
+      "title": "Ricoh, You Disappoint Us",
+      "published_at": "Fri, 28 Aug 2026 11:18:15 GMT",
+      "declared_duration": "01:16:20",
+      "episode_number": "142"
+    },
+    {
+      "episode_id": "66db3d1e4a307a8a60b6",
+      "title": "Sony FX5 DELAYED and is Back-Button AF Stupid?",
+      "published_at": "Thu, 20 Aug 2026 14:57:22 GMT",
+      "declared_duration": "01:40:43",
+      "episode_number": "141"
+    }
+  ],
+  "scope": "Only current RSS contents were inspected; absence is not proof that no transcript exists elsewhere."
+}

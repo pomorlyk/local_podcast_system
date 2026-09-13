@@ -1,0 +1,39 @@
+{
+  "checked_at": "2026-09-06T09:23:46.127594+00:00",
+  "http": {
+    "status": 200,
+    "final_url": "https://feeds.megaphone.fm/GLSS2276105381",
+    "content_type": "application/xml; charset=utf-8"
+  },
+  "feed_sha256": "c12bd1851568d1b7009cf21ad00a0244e07f27ffb63f1c7af3c571673c7e4780",
+  "title": "Easy Stories in English",
+  "current_feed_entries": 278,
+  "retained_catalog_entries": 278,
+  "entries_with_audio": 278,
+  "entries_with_transcript_links": 0,
+  "entries_with_chapter_links": 0,
+  "latest": [
+    {
+      "episode_id": "e715dae86e5d7a8d68b0",
+      "title": "I Can't Keep Doing This (Intermediate)",
+      "published_at": "Mon, 04 May 2026 22:00:00 -0000",
+      "declared_duration": "1650",
+      "episode_number": "275"
+    },
+    {
+      "episode_id": "fab161d2a058aa1bf519",
+      "title": "Cambodia is Hard to Talk About (Conversation)",
+      "published_at": "Mon, 06 Apr 2026 22:00:00 -0000",
+      "declared_duration": "1811",
+      "episode_number": "274"
+    },
+    {
+      "episode_id": "35c920fc64014c5311a4",
+      "title": "Herding Mountains to Make a Forest (Pre-Intermediate)",
+      "published_at": "Mon, 23 Mar 2026 22:00:00 -0000",
+      "declared_duration": "1590",
+      "episode_number": "273"
+    }
+  ],
+  "scope": "Only current RSS contents were inspected; absence is not proof that no transcript exists elsewhere."
+}

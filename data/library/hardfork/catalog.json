@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "show_id": "hardfork",
+  "title": "Hard Fork",
+  "website": "https://www.nytimes.com/column/hard-fork",
+  "feed_url": "https://feeds.simplecast.com/6HKOhNgS",
+  "fetched_at": "2026-09-06T09:22:19.512406+00:00",
+  "current_feed_ids": [
+    "397c9d094feb9ca5e6c9",
+    "7ae611324627e47e335c",
+    "0482872547a3380ae6ad"
+  ],
+  "episodes": [
+    {
+      "episode_id": "397c9d094feb9ca5e6c9",
+      "guid": "7a7bc90f-bc09-4df4-a4ec-67daf45507d2",
+      "identity_basis": "guid",
+      "title": "The A.I. Mob That Attacked Hugging Face + METR’s Ajeya Cotra",
+      "published_at": "Fri, 4 Sep 2026 11:00:00 +0000",
+      "episode_number": "211",
+      "declared_duration": "01:18:46",
+      "episode_url": "https://www.nytimes.com/column/hard-fork",
+      "audio_enclosure": {
+        "length": "75620266",
+        "type": "audio/mpeg",
+        "url": "https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/pscrb.fm/rss/p/nyt.simplecastaudio.com/3e43d072-f8a5-430f-bc8e-4c70aafdf3c7/episodes/3189e217-df81-47e5-8084-f93f19459dfa/audio/128/default.mp3?aid=rss_feed&awCollectionId=3e43d072-f8a5-430f-bc8e-4c70aafdf3c7&awEpisodeId=3189e217-df81-47e5-8084-f93f19459dfa&feed=6HKOhNgS"
+      },
+      "show_notes_html": "<p>This week, we’re diving into two new reports about the OpenAI-Hugging Face hack. We discuss what’s new and how they fundamentally change our understanding of what happened. Then we’re joined by Ajeya Cotra, one of the investigators at METR, to discuss the rogue agents’ message board and chain-of-thought transcripts and how the world should respond.</p><p><strong>Guests:</strong></p><ul><li><p><a href=\"https://metr.org/team/ajeya-cotra/\" rel=\"noopener noreferrer\"><strong><u>Ajeya Cotra,</u></strong></a><strong> </strong>co-author of the METR and Redwood Research report on the OpenAI-Hugging Face hack.</p><p>&nbsp;</p></li></ul><p><strong>Additional Reading:</strong></p><ul><li><a href=\"https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/\" rel=\"noopener noreferrer\"><u>Brief Independent Investigation of Agents’ Behavior, Reasoning and Collaboration in the OpenAI / Hugging Face Hacking Incident</u></a></li><li><a href=\"https://www.planned-obsolescence.org/p/the-hugging-face-attack-surprised\" rel=\"noopener noreferrer\"><u>The Hugging Face Attack Surprised Me</u></a></li><li><a href=\"https://openai.com/index/hugging-face-incident-and-the-road-ahead/\" rel=\"noopener noreferrer\"><u>The Hugging Face Incident and the Road Ahead</u></a></li><li><a href=\"https://www.nytimes.com/2026/09/03/technology/nvidia-hugging-face.html?searchResultPosition=1\" rel=\"noopener noreferrer\"><u>Nvidia Buys Hugging Face in $12.9 Billion Deal</u></a></li></ul><p>&nbsp;</p><p>We want to hear from you. Email us at hardfork@nytimes.com. Find “Hard Fork” on <a href=\"https://www.youtube.com/hardfork\" rel=\"noopener noreferrer\"><u>YouTube</u></a> and <a href=\"https://www.tiktok.com/@hardfork\" rel=\"noopener noreferrer\"><u>TikTok</u></a>.</p>\n<p><p>Subscribe today at <a href=\"http://nytimes.com/podcasts\">nytimes.com/podcasts</a> or on Apple Podcasts and Spotify. You can also subscribe via your favorite podcast app here <a href=\"https://www.nytimes.com/activate-access/audio?source=podcatcher\">https://www.nytimes.com/activate-access/audio?source=podcatcher</a>. For more podcasts and narrated articles, download The New York Times app at nytimes.com/app.</p></p><br/> <p>Hosted by Simplecast, an AdsWizz company. See <a href=\"https://pcm.adswizz.com\">pcm.adswizz.com</a> for information about our collection and use of personal data for advertising.</p>",
+      "show_notes_text": " This week, we’re diving into two new reports about the OpenAI-Hugging Face hack. We discuss what’s new and how they fundamentally change our understanding of what happened. Then we’re joined by Ajeya Cotra, one of the investigators at METR, to discuss the rogue agents’ message board and chain-of-thought transcripts and how the world should respond.   Guests:        Ajeya Cotra,      co-author of the METR and Redwood Research report on the OpenAI-Hugging Face hack.        Additional Reading:      Brief Independent Investigation of Agents’ Behavior, Reasoning and Collaboration in the OpenAI / Hugging Face Hacking Incident      The Hugging Face Attack Surprised Me      The Hugging Face Incident and the Road Ahead      Nvidia Buys Hugging Face in $12.9 Billion Deal        We want to hear from you. Email us at hardfork@nytimes.com. Find “Hard Fork” on   YouTube   and   TikTok  . \n  Subscribe today at  nytimes.com/podcasts  or on Apple Podcasts and Spotify. You can also subscribe via your favorite podcast app here  https://www.nytimes.com/activate-access/audio?source=podcatcher . For more podcasts and narrated articles, download The New York Times app at nytimes.com/app.     Hosted by Simplecast, an AdsWizz company. See  pcm.adswizz.com  for information about our collection and use of personal data for advertising. ",
+      "transcript_links": [],
+      "chapter_links": [],
+      "transcript_status": "not_in_feed",
+      "learning_status": "not_started",
+      "last_seen_at": "2026-09-06T09:22:19.512406+00:00",
+      "first_seen_at": "2026-09-06T09:22:19.512406+00:00"
+    },
+    {
+      "episode_id": "7ae611324627e47e335c",
+      "guid": "acceb119-5645-4f38-a562-9c3b7198b254",
+      "identity_basis": "guid",
+      "title": "Meta Shifts the Blame + Do Data Center Bans Work? + The Final HatGPT",
+      "published_at": "Fri, 28 Aug 2026 11:00:00 +0000",
+      "episode_number": "210",
+      "declared_duration": "01:02:56",
+      "episode_url": "https://www.nytimes.com/column/hard-fork",
+      "audio_enclosure": {
+        "length": "60424942",
+        "type": "audio/mpeg",
+        "url": "https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/pscrb.fm/rss/p/nyt.simplecastaudio.com/3e43d072-f8a5-430f-bc8e-4c70aafdf3c7/episodes/95108f33-c923-4c83-837e-f48795e7ae23/audio/128/default.mp3?aid=rss_feed&awCollectionId=3e43d072-f8a5-430f-bc8e-4c70aafdf3c7&awEpisodeId=95108f33-c923-4c83-837e-f48795e7ae23&feed=6HKOhNgS"
+      },
+      "show_notes_html": "<p>This week, Meta agreed to pay up to $17.1 billion and make major changes to Facebook and Instagram over claims it endangered children with addictive social media platforms. We discuss why it capitulated and what it means for the entire social media industry. Then, Princeton computer science professor Arvind Narayanan returns to offer his thoughts on why banning data centers won’t slow down A.I. progress. And finally, it’s all hats on deck for the final HatGPT.</p>\n<p><br><strong>Guests:</strong></p>\n<ul>\n <li><a href=\"https://www.cs.princeton.edu/~arvindn/\" rel=\"noopener noreferrer\">Arvind Narayanan,</a> professor of computer science at Princeton, and co-author of the <a href=\"https://www.normaltech.ai/\" rel=\"noopener noreferrer\">“A.I. as Normal Technology”</a> newsletter.</li>\n</ul>\n<p><br><strong>Additional Reading:</strong></p>\n<ul>\n <li><a href=\"https://www.nytimes.com/2026/08/26/technology/meta-settlement-social-media-addiction-lawsuit.html\" rel=\"noopener noreferrer\">Meta to Pay Up to $17.1 Billion in Landmark Settlement Over Social Media Addiction Claims</a></li>\n <li><a href=\"https://www.nytimes.com/2026/08/27/technology/meta-settlement-mark-zuckerberg-youtube-tiktok.html\" rel=\"noopener noreferrer\">Mark Zuckerberg Wants to Make Sure His Competitors Share His Pain</a></li>\n <li><a href=\"https://x.com/random_walker/status/2091906235670925377\" rel=\"noopener noreferrer\">Arvind Narayanan’s Post About A.I. Data Centers</a></li>\n <li><a href=\"https://asymco.com/2026/08/04/apple-vision-pro-in-surgery-a-new-paper/\" rel=\"noopener noreferrer\">Apple Vision Pro in Surgery: A New Paper</a></li>\n <li><a href=\"https://kotaku.com/rockstar-gta-6-leaks-grand-theft-auto-cyberleek-official-statement-2000728341\" rel=\"noopener noreferrer\">Rockstar Finally Breaks Its Silence Over The <i>GTA 6</i> Leaks, Calls Them ‘Heartbreaking’</a></li>\n <li><a href=\"https://www.tomshardware.com/tech-industry/drones/amazon-delivery-drone-dumps-texas-womans-parcel-straight-into-her-swimming-pool-viral-video-surfaces-the-same-week-the-company-announces-500-city-prime-air-expansion\" rel=\"noopener noreferrer\">Amazon Delivery Drone Dumps Texas Woman’s Parcel Straight Into Her Swimming Pool</a></li>\n <li><a href=\"https://www.nytimes.com/2026/08/22/technology/carrier-pigeon-app-texting-technology.html\" rel=\"noopener noreferrer\">What if Your Texts Traveled as Slowly as a Carrier Pigeon?</a></li>\n <li><a href=\"https://www.wsj.com/tech/ai/ai-agents-startup-work-culture-fa10494d\" rel=\"noopener noreferrer\">A.I. Agents Are Turning Founders Into Insomniacs</a></li>\n <li><a href=\"https://www.businessinsider.com/meat-proxy-tech-new-term-ai-2026-8\" target=\"_blank\" rel=\"noopener noreferrer\">What is a ‘Meat Proxy’? The New Term For Coworkers Who Blindly Share A.I. Output</a></li>\n <li><a href=\"https://www.reuters.com/world/asia-pacific/chinese-robot-tiangong-clocks-sub-9-second-100-metres-beijing-2026-08-25/\" rel=\"noopener noreferrer\">Chinese Robot Tiangong Clocks Sub-9 second 100 Metres in Beijing</a></li>\n <li><a href=\"https://time.com/article/2026/08/26/openai-sam-altman-interview/\" rel=\"noopener noreferrer\">Inside OpenAI’s Reboot</a></li>\n</ul>\n<p><p>Subscribe today at <a href=\"http://nytimes.com/podcasts\">nytimes.com/podcasts</a> or on Apple Podcasts and Spotify. You can also subscribe via your favorite podcast app here <a href=\"https://www.nytimes.com/activate-access/audio?source=podcatcher\">https://www.nytimes.com/activate-access/audio?source=podcatcher</a>. For more podcasts and narrated articles, download The New York Times app at nytimes.com/app.</p></p><br/> <p>Hosted by Simplecast, an AdsWizz company. See <a href=\"https://pcm.adswizz.com\">pcm.adswizz.com</a> for information about our collection and use of personal data for advertising.</p>",
+      "show_notes_text": " This week, Meta agreed to pay up to $17.1 billion and make major changes to Facebook and Instagram over claims it endangered children with addictive social media platforms. We discuss why it capitulated and what it means for the entire social media industry. Then, Princeton computer science professor Arvind Narayanan returns to offer his thoughts on why banning data centers won’t slow down A.I. progress. And finally, it’s all hats on deck for the final HatGPT. \n   Guests:  \n \n   Arvind Narayanan,  professor of computer science at Princeton, and co-author of the  “A.I. as Normal Technology”  newsletter. \n \n   Additional Reading:  \n \n   Meta to Pay Up to $17.1 Billion in Landmark Settlement Over Social Media Addiction Claims  \n   Mark Zuckerberg Wants to Make Sure His Competitors Share His Pain  \n   Arvind Narayanan’s Post About A.I. Data Centers  \n   Apple Vision Pro in Surgery: A New Paper  \n   Rockstar Finally Breaks Its Silence Over The  GTA 6  Leaks, Calls Them ‘Heartbreaking’  \n   Amazon Delivery Drone Dumps Texas Woman’s Parcel Straight Into Her Swimming Pool  \n   What if Your Texts Traveled as Slowly as a Carrier Pigeon?  \n   A.I. Agents Are Turning Founders Into Insomniacs  \n   What is a ‘Meat Proxy’? The New Term For Coworkers Who Blindly Share A.I. Output  \n   Chinese Robot Tiangong Clocks Sub-9 second 100 Metres in Beijing  \n   Inside OpenAI’s Reboot  \n \n  Subscribe today at  nytimes.com/podcasts  or on Apple Podcasts and Spotify. You can also subscribe via your favorite podcast app here  https://www.nytimes.com/activate-access/audio?source=podcatcher . For more podcasts and narrated articles, download The New York Times app at nytimes.com/app.     Hosted by Simplecast, an AdsWizz company. See  pcm.adswizz.com  for information about our collection and use of personal data for advertising. ",
+      "transcript_links": [],
+      "chapter_links": [],
+      "transcript_status": "not_in_feed",
+      "learning_status": "not_started",
+      "last_seen_at": "2026-09-06T09:22:19.512406+00:00",
+      "first_seen_at": "2026-09-06T09:22:19.512406+00:00"
+    },
+    {
+      "episode_id": "0482872547a3380ae6ad",
+      "guid": "4e573fc5-f8ff-404c-af6e-a003d8835d31",
+      "identity_basis": "guid",
+      "title": "What’s a Hard Fork?",
+      "published_at": "Tue, 27 Sep 2022 14:00:00 +0000",
+      "episode_number": null,
+      "declared_duration": "00:01:24",
+      "episode_url": "https://www.nytimes.com/2022/10/04/podcasts/hard-fork-technology.html",
+      "audio_enclosure": {
+        "length": "1352917",
+        "type": "audio/mpeg",
+        "url": "https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/pscrb.fm/rss/p/nyt.simplecastaudio.com/3e43d072-f8a5-430f-bc8e-4c70aafdf3c7/episodes/e8ace451-6d90-460a-acca-9e715422ea13/audio/128/default.mp3?aid=rss_feed&awCollectionId=3e43d072-f8a5-430f-bc8e-4c70aafdf3c7&awEpisodeId=e8ace451-6d90-460a-acca-9e715422ea13&feed=6HKOhNgS"
+      },
+      "show_notes_html": "<p>Hosts Kevin Roose and Casey Newton explore stories from the wild frontier of tech.</p><p>What’s real? What’s hype? “Hard Fork” is here to help you make sense of it. Tune in every Friday.</p>\n<p><p>Subscribe today at <a href=\"http://nytimes.com/podcasts\">nytimes.com/podcasts</a> or on Apple Podcasts and Spotify. You can also subscribe via your favorite podcast app here <a href=\"https://www.nytimes.com/activate-access/audio?source=podcatcher\">https://www.nytimes.com/activate-access/audio?source=podcatcher</a>. For more podcasts and narrated articles, download The New York Times app at nytimes.com/app.</p></p><br/> <p>Hosted by Simplecast, an AdsWizz company. See <a href=\"https://pcm.adswizz.com\">pcm.adswizz.com</a> for information about our collection and use of personal data for advertising.</p>",
+      "show_notes_text": " Hosts Kevin Roose and Casey Newton explore stories from the wild frontier of tech.  What’s real? What’s hype? “Hard Fork” is here to help you make sense of it. Tune in every Friday. \n  Subscribe today at  nytimes.com/podcasts  or on Apple Podcasts and Spotify. You can also subscribe via your favorite podcast app here  https://www.nytimes.com/activate-access/audio?source=podcatcher . For more podcasts and narrated articles, download The New York Times app at nytimes.com/app.     Hosted by Simplecast, an AdsWizz company. See  pcm.adswizz.com  for information about our collection and use of personal data for advertising. ",
+      "transcript_links": [],
+      "chapter_links": [],
+      "transcript_status": "not_in_feed",
+      "learning_status": "not_started",
+      "last_seen_at": "2026-09-06T09:22:19.512406+00:00",
+      "first_seen_at": "2026-09-06T09:22:19.512406+00:00"
+    }
+  ],
+  "seed_snapshot": {
+    "note": "公开仓库只附带最近若干期作为初始目录，完整目录请在前端点「更新目录」重新同步。",
+    "episodes_before_trim": 3,
+    "episodes_in_seed": 3
+  }
+}

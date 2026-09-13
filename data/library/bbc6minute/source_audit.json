@@ -1,0 +1,39 @@
+{
+  "checked_at": "2026-09-06T09:26:14.290713+00:00",
+  "http": {
+    "status": 200,
+    "final_url": "https://podcasts.files.bbci.co.uk/p02pc9tn.rss",
+    "content_type": "application/rss+xml"
+  },
+  "feed_sha256": "3976ea90e44c002db768d1dc7bcde1ddc83ee659f3c88891cb5fae9ae2e67397",
+  "title": "6 Minute English",
+  "current_feed_entries": 339,
+  "retained_catalog_entries": 339,
+  "entries_with_audio": 339,
+  "entries_with_transcript_links": 0,
+  "entries_with_chapter_links": 0,
+  "latest": [
+    {
+      "episode_id": "45d640401a30a1ebe259",
+      "title": "Climate change and extreme weather",
+      "published_at": "Thu, 03 Sep 2026 08:33:00 +0000",
+      "declared_duration": "396",
+      "episode_number": null
+    },
+    {
+      "episode_id": "efcf53ff8c2f9d8330e9",
+      "title": "How do we describe smells?",
+      "published_at": "Thu, 27 Aug 2026 09:16:00 +0000",
+      "declared_duration": "397",
+      "episode_number": null
+    },
+    {
+      "episode_id": "9c0fc0cc7c5a9e1d715f",
+      "title": "Sharing the road with driverless cars",
+      "published_at": "Thu, 20 Aug 2026 13:13:00 +0000",
+      "declared_duration": "397",
+      "episode_number": null
+    }
+  ],
+  "scope": "Only current RSS contents were inspected; absence is not proof that no transcript exists elsewhere."
+}

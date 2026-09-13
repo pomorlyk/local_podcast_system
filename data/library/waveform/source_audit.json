@@ -1,0 +1,39 @@
+{
+  "checked_at": "2026-09-06T07:13:22.748227+00:00",
+  "http": {
+    "status": 200,
+    "final_url": "https://feeds.megaphone.fm/STU4418364045",
+    "content_type": "application/xml; charset=utf-8"
+  },
+  "feed_sha256": "c9cfb75755e2234eb36c7aa8dd2fd6d99cdbfa3234fe078da500d53c7fcc37b7",
+  "title": "Waveform: The MKBHD Podcast",
+  "current_feed_entries": 373,
+  "retained_catalog_entries": 373,
+  "entries_with_audio": 373,
+  "entries_with_transcript_links": 0,
+  "entries_with_chapter_links": 0,
+  "latest": [
+    {
+      "episode_id": "405018e97308a70119d9",
+      "title": "I Don’t Need AI in My Toothbrush",
+      "published_at": "Fri, 04 Sep 2026 08:00:00 -0000",
+      "declared_duration": "6176",
+      "episode_number": "371"
+    },
+    {
+      "episode_id": "ad262d9f28b529fb1636",
+      "title": "Apple M6? S27 Leaked? It's Gadget Season!",
+      "published_at": "Fri, 28 Aug 2026 08:00:00 -0000",
+      "declared_duration": "5105",
+      "episode_number": "370"
+    },
+    {
+      "episode_id": "cb735133a4e83df4e90d",
+      "title": "YouTube Views Feel Fake Now",
+      "published_at": "Fri, 21 Aug 2026 08:00:00 -0000",
+      "declared_duration": "4811",
+      "episode_number": "369"
+    }
+  ],
+  "scope": "Only current RSS contents were inspected; absence is not proof that no transcript exists elsewhere."
+}

@@ -1,0 +1,39 @@
+{
+  "checked_at": "2026-09-06T09:26:17.639006+00:00",
+  "http": {
+    "status": 200,
+    "final_url": "https://feeds.megaphone.fm/allearsenglish",
+    "content_type": "application/xml; charset=utf-8"
+  },
+  "feed_sha256": "25a66c25d1033a8dc1cbaeac69e1ea8b0677699b9427681c5d980e8c3acf0881",
+  "title": "All Ears English Podcast",
+  "current_feed_entries": 2802,
+  "retained_catalog_entries": 2802,
+  "entries_with_audio": 2802,
+  "entries_with_transcript_links": 0,
+  "entries_with_chapter_links": 0,
+  "latest": [
+    {
+      "episode_id": "8716a3f4209a8ff0f21c",
+      "title": "AEE: Should You Be Gassing People Up?",
+      "published_at": "Sat, 05 Sep 2026 05:00:00 -0000",
+      "declared_duration": "1230",
+      "episode_number": null
+    },
+    {
+      "episode_id": "9999b1d736d97b8ee84e",
+      "title": "AEE 2681: Self Awareness Is Key! Acknowledge Your Excitement in English",
+      "published_at": "Thu, 03 Sep 2026 05:00:00 -0000",
+      "declared_duration": "1310",
+      "episode_number": "2681"
+    },
+    {
+      "episode_id": "b0fe8b9c333dd6fa814a",
+      "title": "AEE 2680: Conversation Coaching Part 3: Need to Pivot?",
+      "published_at": "Wed, 02 Sep 2026 05:00:00 -0000",
+      "declared_duration": "1430",
+      "episode_number": "2680"
+    }
+  ],
+  "scope": "Only current RSS contents were inspected; absence is not proof that no transcript exists elsewhere."
+}

@@ -1,0 +1,39 @@
+{
+  "checked_at": "2026-09-06T09:22:19.513919+00:00",
+  "http": {
+    "status": 200,
+    "final_url": "https://feeds.simplecast.com/6HKOhNgS",
+    "content_type": "application/xml"
+  },
+  "feed_sha256": "9cb9b5b70c81b16b069474a23d322e5afad41f673925bba9bd2a62528e2ac162",
+  "title": "Hard Fork",
+  "current_feed_entries": 3,
+  "retained_catalog_entries": 3,
+  "entries_with_audio": 3,
+  "entries_with_transcript_links": 0,
+  "entries_with_chapter_links": 0,
+  "latest": [
+    {
+      "episode_id": "397c9d094feb9ca5e6c9",
+      "title": "The A.I. Mob That Attacked Hugging Face + METR’s Ajeya Cotra",
+      "published_at": "Fri, 4 Sep 2026 11:00:00 +0000",
+      "declared_duration": "01:18:46",
+      "episode_number": "211"
+    },
+    {
+      "episode_id": "7ae611324627e47e335c",
+      "title": "Meta Shifts the Blame + Do Data Center Bans Work? + The Final HatGPT",
+      "published_at": "Fri, 28 Aug 2026 11:00:00 +0000",
+      "declared_duration": "01:02:56",
+      "episode_number": "210"
+    },
+    {
+      "episode_id": "0482872547a3380ae6ad",
+      "title": "What’s a Hard Fork?",
+      "published_at": "Tue, 27 Sep 2022 14:00:00 +0000",
+      "declared_duration": "00:01:24",
+      "episode_number": null
+    }
+  ],
+  "scope": "Only current RSS contents were inspected; absence is not proof that no transcript exists elsewhere."
+}

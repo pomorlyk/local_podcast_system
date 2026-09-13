@@ -1,0 +1,39 @@
+{
+  "checked_at": "2026-09-06T09:25:59.695865+00:00",
+  "http": {
+    "status": 200,
+    "final_url": "https://rss.buzzsprout.com/2453212.rss",
+    "content_type": "text/xml; charset=utf-8"
+  },
+  "feed_sha256": "9406bbc1b2f0b09698746ffa4030f757a888a75a69b570c0145cf8010f4b35f2",
+  "title": "The CultCast",
+  "current_feed_entries": 782,
+  "retained_catalog_entries": 782,
+  "entries_with_audio": 782,
+  "entries_with_transcript_links": 0,
+  "entries_with_chapter_links": 109,
+  "latest": [
+    {
+      "episode_id": "d6169f3319a784c54a33",
+      "title": "MORE Awesome NEW iOS 27 features, bad news for iPhone Ultra, + my TV repair saga plot twist! (CultCast #750)",
+      "published_at": "Sat, 23 May 2026 16:00:00 -0700",
+      "declared_duration": "3567",
+      "episode_number": null
+    },
+    {
+      "episode_id": "1ffd00cdeb7dc3f8bda9",
+      "title": "We've got HUGE iOS 27 leaks + my 100K Apple stock update!",
+      "published_at": "Fri, 15 May 2026 14:00:00 -0700",
+      "declared_duration": "2786",
+      "episode_number": null
+    },
+    {
+      "episode_id": "6504a307db4fde532e13",
+      "title": "RAMAGEDDON!  Apple’s RAM Crisis Is About to PUNCH Your Wallet (CultCast #748) ",
+      "published_at": "Fri, 08 May 2026 16:00:00 -0700",
+      "declared_duration": "4716",
+      "episode_number": null
+    }
+  ],
+  "scope": "Only current RSS contents were inspected; absence is not proof that no transcript exists elsewhere."
+}

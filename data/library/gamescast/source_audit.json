@@ -1,0 +1,39 @@
+{
+  "checked_at": "2026-09-06T08:07:17.348487+00:00",
+  "http": {
+    "status": 200,
+    "final_url": "https://feeds.megaphone.fm/ROOSTER3727935380",
+    "content_type": "application/xml; charset=utf-8"
+  },
+  "feed_sha256": "bc1c72755c6f478b1621da32ed262fe2ab093d2a33b8d9aa1cb93e5b819540a0",
+  "title": "Kinda Funny Gamescast: Video Game Podcast",
+  "current_feed_entries": 1255,
+  "retained_catalog_entries": 1255,
+  "entries_with_audio": 1255,
+  "entries_with_transcript_links": 0,
+  "entries_with_chapter_links": 0,
+  "latest": [
+    {
+      "episode_id": "4a32a01ed4028271d585",
+      "title": "We Played Matthew McConaughey's Exodus! - Kinda Funny Gamescast",
+      "published_at": "Fri, 04 Sep 2026 19:47:00 -0000",
+      "declared_duration": "3626",
+      "episode_number": null
+    },
+    {
+      "episode_id": "6eac15f8c3fe1e031b0c",
+      "title": "State of Play September 2026 Review - Kinda Funny Gamescast",
+      "published_at": "Thu, 03 Sep 2026 20:46:00 -0000",
+      "declared_duration": "5346",
+      "episode_number": null
+    },
+    {
+      "episode_id": "5733e0e7286544da0ef8",
+      "title": "Star Wars Zero Company, Big Walk Reviews (So Far) - Kinda Funny Gamescast",
+      "published_at": "Wed, 02 Sep 2026 19:29:00 -0000",
+      "declared_duration": "3672",
+      "episode_number": null
+    }
+  ],
+  "scope": "Only current RSS contents were inspected; absence is not proof that no transcript exists elsewhere."
+}

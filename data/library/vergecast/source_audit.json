@@ -1,0 +1,39 @@
+{
+  "checked_at": "2026-09-06T09:22:54.547839+00:00",
+  "http": {
+    "status": 200,
+    "final_url": "https://feeds.megaphone.fm/vergecast",
+    "content_type": "application/xml; charset=utf-8"
+  },
+  "feed_sha256": "bbbb9b66c2a51d643fd14e5cf0bc8c63440841777ec90cc1e90d782c8c82a57a",
+  "title": "The Vergecast",
+  "current_feed_entries": 1068,
+  "retained_catalog_entries": 1068,
+  "entries_with_audio": 1068,
+  "entries_with_transcript_links": 0,
+  "entries_with_chapter_links": 0,
+  "latest": [
+    {
+      "episode_id": "02b7932b006b62240f07",
+      "title": "AGI is whatever you want it to be",
+      "published_at": "Fri, 04 Sep 2026 16:16:00 -0000",
+      "declared_duration": "6401",
+      "episode_number": null
+    },
+    {
+      "episode_id": "e0f4d54330409af056c4",
+      "title": "Apple Home rumors, ranked",
+      "published_at": "Thu, 03 Sep 2026 19:57:00 -0000",
+      "declared_duration": "2196",
+      "episode_number": null
+    },
+    {
+      "episode_id": "db7b7d5ecd5d15f07768",
+      "title": "What’s happening with US data centers?",
+      "published_at": "Wed, 02 Sep 2026 18:51:00 -0000",
+      "declared_duration": "1505",
+      "episode_number": null
+    }
+  ],
+  "scope": "Only current RSS contents were inspected; absence is not proof that no transcript exists elsewhere."
+}
