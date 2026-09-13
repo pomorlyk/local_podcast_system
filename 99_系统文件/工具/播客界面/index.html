@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>听间 — 私人播客书架</title><meta name="description" content="听一段，留一点。"><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body>
+<script src="/vocabulary.js" defer></script>
+<aside class="sidebar">
+  <a class="brand" href="/" aria-label="听间首页"><span class="brand-mark" aria-hidden="true">◖</span>听间<span class="brand-caption">私人播客书架</span></a>
+  <nav aria-label="资料库导航">
+    <button class="nav-item active" data-view="downloaded">已下载 <b id="download-count">—</b></button>
+    <button class="nav-item" data-view="all">全部单集 <b id="all-count">—</b></button>
+    <button class="nav-item" data-view="bookmarks">我的片段 <b id="mark-count">—</b></button>
+    <button class="nav-item" data-view="vocabulary">生词本 <b id="vocabulary-count">0</b></button>
+  </nav>
+  <div class="side-label">关注的节目</div><div id="show-nav"></div>
+  <div class="side-bottom"><button class="text-button" data-open-settings>翻译设置</button><a href="/api/export" download>导出学习记录</a><p>保存在这台电脑上</p></div>
+</aside>
+<main>
+  <header class="topbar"><div class="breadcrumb">书架 <span>/</span> <span id="breadcrumb">已下载</span></div><button id="exit-focus" class="back-button" hidden>← 返回书架</button><div class="topbar-actions"><button id="focus-btn" class="text-button" hidden>专注收听 ↗</button><button class="text-button" data-open-settings>翻译设置</button><button id="sync-btn" class="text-button">更新目录</button></div></header>
+  <section class="page-heading"><div><p class="eyebrow">你的收听时间</p><h1 id="page-title">接着，听下去。</h1><p id="page-caption" class="muted">正在读取你的资料库…</p></div><span class="heading-note">每天一点，慢慢听懂。</span></section>
+  <div id="jobs" class="jobs" aria-live="polite"></div>
+  <div class="workspace">
+    <section class="library-panel" aria-label="单集列表">
+      <div class="library-tools"><div class="searchbox"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="找一集想听的" aria-label="搜索单集"><kbd>/</kbd></div><select id="show-filter" aria-label="按节目筛选"><option value="">全部节目</option></select></div>
+      <div class="list-heading"><span id="list-count">单集</span><span>节目 / 时长</span></div>
+      <div id="episodes" class="episode-list"><div class="empty">正在读取本地目录…</div></div>
+      <button id="more" class="button load-more" hidden>再看 30 期 ↓</button>
+    </section>
+    <section class="study-panel" aria-label="单集学习区">
+      <div id="detail-empty" class="empty">选一期，慢慢听。</div>
+      <div id="detail" hidden>
+        <div class="episode-hero"><div id="detail-cover-wrap" class="detail-cover-wrap"><img id="detail-cover" class="detail-cover" alt="" hidden><span id="detail-cover-fallback">◖</span></div><div class="episode-copy"><div class="detail-heading"><span id="detail-show" class="eyebrow"></span><span id="detail-state" class="badge"></span></div><h2 id="detail-title"></h2><p id="detail-date" class="muted episode-date"></p><div class="detail-actions"><button id="listen-btn" class="button primary">▶ 开始听</button><button id="mark-btn" class="button" title="标记当前时间之前 15 秒的内容">标记这一段</button></div></div></div>
+        <div class="tabs" role="tablist" aria-label="学习内容"><button role="tab" aria-selected="true" data-tab="transcript">字幕</button><button role="tab" aria-selected="false" data-tab="notes">片段与笔记</button><button role="tab" aria-selected="false" data-tab="about">本期介绍</button></div>
+        <div id="tab-transcript" class="tab-content" role="tabpanel">
+          <div class="subtitle-controls"><div class="language-switch" role="group" aria-label="字幕语言"><button data-language="both" aria-pressed="true">双语</button><button data-language="en" aria-pressed="false">英文</button><button data-language="zh" aria-pressed="false">中文</button></div><button id="follow-subtitles" class="text-button" aria-pressed="true">跟随播放</button></div>
+          <div class="transcript-toolbar"><span id="transcript-status" class="muted"></span><details class="subtitle-menu"><summary>字幕操作</summary><div class="subtitle-menu-body"><button id="transcribe-btn" class="text-button">生成双语字幕</button><button id="translate-btn" class="text-button" hidden>补全中文</button><button id="cancel-transcribe" class="text-button" hidden>取消任务</button><button id="import-btn" class="text-button">导入英文稿</button><div id="transcript-downloads" hidden><a id="export-txt" download>下载 TXT</a><a id="export-srt" download>下载 SRT</a></div></div></details></div>
+          <p id="transcribe-progress" class="muted small" aria-live="polite"></p>
+          <div id="subtitle-empty-action" hidden><button id="generate-subtitles" class="button primary">生成中英字幕</button></div>
+          <input id="transcript-search" type="search" placeholder="查找一句话…" aria-label="搜索字幕" hidden>
+          <div class="capture-tools"><button id="capture-toggle" class="text-button" aria-pressed="true">划选即收藏 · 开</button><span id="capture-hint">选中英文或中文，自动留下双语和原句</span></div>
+          <div id="capture-status" role="status" aria-live="polite"></div>
+          <div id="transcript-content"></div>
+        </div>
+        <div id="tab-notes" class="tab-content" role="tabpanel" hidden>
+          <div class="section-label"><h3>本集生词</h3><a href="/api/vocabulary-export" download>导出生词本</a></div><div id="episode-vocabulary"></div>
+          <div class="section-label"><h3>留下的片段</h3><span id="detail-mark-count"></span></div><div id="detail-bookmarks"></div>
+          <div class="section-label note-title"><label for="notes">随手记</label><span id="note-status" aria-live="polite"></span></div><textarea id="notes" placeholder="一句想学的表达，或你对这个话题的看法…" rows="6"></textarea><div class="note-footer"><span>只记你想留下的。</span><button id="save-notes" class="text-button">保存笔记</button></div>
+        </div>
+        <div id="tab-about" class="tab-content" role="tabpanel" hidden><div id="description" class="description"></div><a id="source" target="_blank" rel="noreferrer">原始音频来源 ↗</a></div>
+      </div>
+    </section>
+  </div>
+</main>
+<footer class="player" aria-label="音频播放器">
+  <button class="player-episode" id="open-playing" aria-label="专注当前播放的单集"><div id="player-art" class="mini-art">◖</div><div><strong id="player-title">今天，想听点什么？</strong><span id="player-show">从书架选一期开始</span></div></button>
+  <div class="player-center"><audio id="audio" controls preload="metadata" aria-label="播放控制"></audio><div class="player-extras"><button id="back" class="text-button" aria-label="后退10秒">−10 秒</button><button id="forward" class="text-button" aria-label="前进10秒">+10 秒</button><span class="divider"></span><label>速度 <select id="speed" aria-label="播放倍速"><option value="0.75">0.75×</option><option value="0.85">0.85×</option><option value="1" selected>1×</option><option value="1.25">1.25×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label><button id="timer" class="text-button">30 分钟后停止</button><button id="loop" class="text-button" hidden>结束循环</button></div></div>
+  <div class="player-saved"><span id="progress-status">进度自动保存</span></div>
+</footer>
+<dialog id="mark-dialog"><form id="mark-form"><div class="dialog-heading"><h2>留下这个片段</h2><button type="button" class="icon-button close-dialog" aria-label="关闭">×</button></div><p class="muted">保存一小段，想复习时再回来。</p><div class="time-fields"><label>从（分:秒）<input id="mark-start" required placeholder="00:00"></label><label>到（分:秒）<input id="mark-end" required placeholder="00:15"></label></div><label for="mark-note">记一句（可选）</label><textarea id="mark-note" rows="3" placeholder="这句话没听清 / 这个表达很实用"></textarea><button class="button primary" type="submit">保存片段</button></form></dialog>
+<dialog id="import-dialog"><form id="import-form"><div class="dialog-heading"><h2>导入英文稿</h2><button type="button" class="icon-button close-dialog" aria-label="关闭">×</button></div><p class="muted">支持 TXT、SRT、VTT。</p><input id="transcript-file" type="file" accept=".txt,.srt,.vtt" required aria-label="选择文字稿"><label class="check-label"><input id="aligned" type="checkbox">字幕时间轴对应当前这份音频</label><button class="button primary" type="submit">导入并翻译</button></form></dialog>
+<dialog id="settings-dialog"><form id="settings-form"><div class="dialog-heading"><h2>中文翻译</h2><button type="button" class="icon-button close-dialog" aria-label="关闭">×</button></div><p class="muted">英文在本机识别，中文由 DeepSeek 翻译。每次生成英文后，会自动补齐中文。</p><label for="translation-model">默认模型</label><select id="translation-model"><option value="deepseek-v4-flash">Flash · 日常翻译，异常批次尝试 Pro</option><option value="deepseek-v4-pro">Pro · 全程使用 Pro</option></select><label for="translation-key">API 密钥</label><input id="translation-key" type="password" autocomplete="new-password" placeholder="输入官方 DeepSeek API 密钥"><p id="key-status" class="muted small"></p><p class="muted small">密钥只在本机加密保存。仅发送英文文字用于翻译，音频保留在电脑里。</p><button class="button primary" type="submit">保存并补齐待翻译字幕</button></form></dialog>
+<div id="toast" role="status" aria-live="polite" hidden></div>
+</body></html>

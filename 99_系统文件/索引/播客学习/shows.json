@@ -1,0 +1,92 @@
+[
+  {
+    "id": "waveform",
+    "name": "Waveform",
+    "category": "数码与生活",
+    "feed_url": "https://feeds.megaphone.fm/STU4418364045",
+    "apple_url": "https://podcasts.apple.com/us/podcast/waveform-the-mkbhd-podcast/id1474429475?uo=4",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/92/dd/8e/92dd8eed-43ec-dc47-50ae-c1ec7c0a3353/mza_3861776104886813687.jpg/600x600bb.jpg",
+    "apple_id": 1474429475
+  },
+  {
+    "id": "petapixel",
+    "name": "PetaPixel",
+    "category": "摄影",
+    "feed_url": "https://anchor.fm/s/e3085708/podcast/rss",
+    "apple_url": "https://podcasts.apple.com/us/podcast/the-petapixel-photography-podcast/id1691452657?uo=4",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts126/v4/9a/05/62/9a056275-1aab-39eb-cc69-77473b5adc9e/mza_14796251031695631646.jpg/600x600bb.jpg",
+    "apple_id": 1691452657
+  },
+  {
+    "id": "gamescast",
+    "name": "Kinda Funny Gamescast",
+    "category": "主机游戏",
+    "feed_url": "https://feeds.megaphone.fm/ROOSTER3727935380",
+    "apple_url": "https://podcasts.apple.com/us/podcast/kinda-funny-gamescast-video-game-podcast/id957171516?uo=4",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/33/ea/0a/33ea0a84-063d-d46a-481c-d55bb8020d7e/mza_8933228174541902300.jpg/600x600bb.jpg",
+    "apple_id": 957171516
+  },
+  {
+    "id": "hardfork",
+    "name": "Hard Fork",
+    "category": "AI 与科技",
+    "feed_url": "https://feeds.simplecast.com/6HKOhNgS",
+    "apple_url": "https://podcasts.apple.com/us/podcast/hard-fork/id1528594034?uo=4",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/de/c5/20/dec52092-6be0-9007-875c-6aa8e690a905/mza_12490014444602578825.jpg/600x600bb.jpg",
+    "apple_id": 1528594034
+  },
+  {
+    "id": "vergecast",
+    "name": "The Vergecast",
+    "category": "数码与科技",
+    "feed_url": "https://feeds.megaphone.fm/vergecast",
+    "apple_url": "https://podcasts.apple.com/us/podcast/the-vergecast/id430333725?uo=4",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts211/v4/1d/64/cd/1d64cd45-4497-ee37-0e35-df108046d9e6/mza_781548057726205094.jpg/600x600bb.jpg",
+    "apple_id": 430333725
+  },
+  {
+    "id": "cultcast",
+    "name": "The CultCast",
+    "category": "Apple",
+    "feed_url": "https://rss.buzzsprout.com/2453212.rss",
+    "apple_url": "https://podcasts.apple.com/us/podcast/the-cultcast/id503494956?uo=4",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/4d/dd/47/4ddd47d5-e584-bb25-3108-e85562676c16/mza_12921391908516222608.jpg/600x600bb.jpg",
+    "apple_id": 503494956
+  },
+  {
+    "id": "atp",
+    "name": "Accidental Tech Podcast",
+    "category": "科技与编程",
+    "feed_url": "https://cdn.atp.fm/rss/public?wtvryzdm",
+    "apple_url": "https://podcasts.apple.com/us/podcast/accidental-tech-podcast/id617416468?uo=4",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts126/v4/91/22/42/9122426f-df98-4302-6ba3-da67b0648e70/mza_5041274938111919910.png/600x600bb.jpg",
+    "apple_id": 617416468
+  },
+  {
+    "id": "bbc6minute",
+    "name": "6 Minute English",
+    "category": "英语与日常",
+    "feed_url": "https://podcasts.files.bbci.co.uk/p02pc9tn.rss",
+    "apple_url": "https://podcasts.apple.com/us/podcast/6-minute-english/id262026947?uo=4",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts211/v4/ba/98/35/ba9835eb-1ef3-60e4-bf05-3d141b8d1c7a/mza_3844641997714022659.jpg/600x600bb.jpg",
+    "apple_id": 262026947
+  },
+  {
+    "id": "allears",
+    "name": "All Ears English",
+    "category": "日常交流",
+    "feed_url": "https://feeds.megaphone.fm/allearsenglish",
+    "apple_url": "https://podcasts.apple.com/us/podcast/all-ears-english-podcast/id751574016?uo=4",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts211/v4/cb/a1/13/cba113a7-999d-3c3d-a594-900adb69624e/mza_7992161192502469150.jpg/600x600bb.jpg",
+    "apple_id": 751574016
+  },
+  {
+    "id": "easystories",
+    "name": "Easy Stories in English",
+    "category": "故事",
+    "feed_url": "https://feeds.megaphone.fm/GLSS2276105381",
+    "apple_url": "https://podcasts.apple.com/us/podcast/easy-stories-in-english/id1448201565?uo=4",
+    "artwork_url": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/50/c7/97/50c79792-1448-8402-89b8-980fe261bcd7/mza_613017404602441223.jpeg/600x600bb.jpg",
+    "apple_id": 1448201565
+  }
+]
