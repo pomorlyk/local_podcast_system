@@ -23,6 +23,9 @@ import paths
 import podcast_archive as archive
 import podcast_translate as translation
 import podcast_vocabulary as vocabulary
+import podcast_feeds as feeds
+import podcast_discover as discover
+import podcast_llm as llm
 
 ROOT = archive.ROOT
 STATIC = paths.WEB
@@ -568,6 +571,39 @@ def byte_range(header, size):
     return start,end,206
 
 
+def _extended_post(path, data):
+    """Routes added by the subscription-refresh and AI-discovery features.
+
+    Returns None for anything that belongs to the original application, so the
+    original dispatch in do_POST keeps handling it untouched.
+    """
+    if path == '/api/subscription-settings':
+        return feeds.save_settings(data)
+    if path == '/api/updates/refresh':
+        return feeds.refresh_async(data.get('shows') or None, data.get('trigger') or 'manual')
+    if path == '/api/updates/seen':
+        return feeds.mark_seen(data.get('show'), data.get('episode_ids'),
+                               bool(data.get('all')))
+    if path == '/api/discover/interests':
+        return discover.save_interests(data)
+    if path == '/api/discover/settings':
+        return llm.save_settings(data)
+    if path == '/api/discover/recommend':
+        return discover.recommend(data)
+    if path == '/api/discover/auto':
+        return discover.auto(data)
+    if path == '/api/discover/subscribe':
+        shows = data.get('shows')
+        if not isinstance(shows, list) or not shows:
+            raise ValueError('请先选择要关注的节目')
+        if len(shows) > 10:
+            raise ValueError('一次最多关注 10 档节目')
+        return {'results': discover.subscribe(shows)}
+    if path == '/api/discover/unfollow':
+        return discover.unfollow(data.get('show'))
+    return None
+
+
 class Handler(BaseHTTPRequestHandler):
     def log_message(self,*args): pass
 
@@ -596,8 +632,9 @@ class Handler(BaseHTTPRequestHandler):
             self.output({'error':'只接受本机页面请求'},403); return
         p=urlsplit(self.path); q=parse_qs(p.query)
         try:
-            if p.path in ('/','/app.js','/vocabulary.js','/style.css'):
-                name={'/':'index.html','/app.js':'app.js','/vocabulary.js':'vocabulary.js','/style.css':'style.css'}[p.path]
+            if p.path in ('/','/app.js','/vocabulary.js','/style.css','/extras.js','/extras.css'):
+                name={'/':'index.html','/app.js':'app.js','/vocabulary.js':'vocabulary.js','/style.css':'style.css',
+                      '/extras.js':'extras.js','/extras.css':'extras.css'}[p.path]
                 mime='text/javascript; charset=utf-8' if p.path.endswith('.js') else 'text/css; charset=utf-8' if p.path.endswith('.css') else 'text/html; charset=utf-8'
                 self.output((STATIC/name).read_bytes(),mime=mime)
             elif p.path=='/api/health': self.output({'app':'podcast-local','version':3})
@@ -643,6 +680,16 @@ class Handler(BaseHTTPRequestHandler):
                 self.output(body.encode('utf-8'),mime='text/plain; charset=utf-8',extra={'Content-Disposition':f'attachment; filename="transcript.{fmt}"'})
             elif p.path=='/api/jobs':
                 with JOB_LOCK: self.output({'jobs':JOBS[-20:]})
+            elif p.path=='/api/updates': self.output(feeds.updates())
+            elif p.path=='/api/subscription-settings': self.output(feeds.read_settings())
+            elif p.path=='/api/discover/interests': self.output(discover.interests())
+            elif p.path=='/api/discover/settings': self.output(llm.public_settings())
+            elif p.path=='/api/discover/search':
+                self.output({'results':discover.search(q.get('q',[''])[0],
+                            q.get('limit',['25'])[0], (q.get('country',['US'])[0] or 'US').upper()[:2])})
+            elif p.path=='/api/discover/health':
+                self.output({'ok':True,'ai_configured':llm.public_settings()['configured'],
+                             'auto_refresh':feeds.read_settings()})
             elif p.path=='/api/export':
                 with database() as db:
                     data={table:[dict(r) for r in db.execute('SELECT * FROM '+table)] for table in ('state','bookmarks','transcripts','translations','vocabulary')}
@@ -707,17 +754,26 @@ class Handler(BaseHTTPRequestHandler):
                                     break
                     result['queued']=queued
             else:
-                result=enqueue(data) if self.path=='/api/job' else cancel_job(data) if self.path=='/api/job-cancel' else mutate(self.path,data)
+                result=_extended_post(self.path,data)
+                if result is None:
+                    result=enqueue(data) if self.path=='/api/job' else cancel_job(data) if self.path=='/api/job-cancel' else mutate(self.path,data)
             self.output(result)
         except (ValueError,KeyError,TypeError) as exc: self.output({'error':str(exc)},400)
         except Exception: self.output({'error':'保存失败，内容未确认保存，请重试'},500)
 
 
-if __name__=='__main__':
-    parser=argparse.ArgumentParser(); parser.add_argument('--port',type=int,default=8765)
-    args=parser.parse_args(); init_db()
-    server=ThreadingHTTPServer(('127.0.0.1',args.port),Handler)
+def serve(port=8765):
+    """Prepare the database, start the background workers and serve loopback."""
+    init_db()
+    httpd=ThreadingHTTPServer(('127.0.0.1',port),Handler)
     threading.Thread(target=worker,daemon=True).start()
     threading.Thread(target=vocabulary_worker,daemon=True).start()
-    print(f'Podcast library: http://127.0.0.1:{args.port}',flush=True)
-    server.serve_forever()
+    feeds.start_scheduler()
+    print(f'Podcast library: http://127.0.0.1:{port}',flush=True)
+    return httpd
+
+
+if __name__=='__main__':
+    parser=argparse.ArgumentParser(); parser.add_argument('--port',type=int,default=8765)
+    args=parser.parse_args()
+    serve(args.port).serve_forever()

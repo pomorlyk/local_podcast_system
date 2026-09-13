@@ -1,0 +1,12 @@
+{
+  "keywords": [
+    "人工智能",
+    "独立游戏开发",
+    "摄影"
+  ],
+  "exclude_keywords": [],
+  "country": "US",
+  "language": "en",
+  "auto_subscribe_limit": 3,
+  "note": "这是示例文件。把你想听的主题写进 keywords，然后在「更新与发现 → AI 发现」里点「让 AI 自己去找并关注」。复制成 interests.json 后生效，interests.json 不会被提交到仓库。"
+}
